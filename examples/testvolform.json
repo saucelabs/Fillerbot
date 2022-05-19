@@ -1,0 +1,152 @@
+{
+   "form_url": "https://www.jotform.com/form-templates/preview/20827049049355/classic&nofs",
+   "name":"ComplexGeneratorsExample",
+   "n_items":100000,
+   "fields":[
+   {
+      "name":"q3_name[first]",
+      "aliases":[],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"first_name"
+      }
+   },
+   {
+      "name":"q3_name[last]",
+      "aliases":[],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"last_name"
+      }
+   },
+   {
+      "name":"q8_email8",
+      "aliases":[],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"email"
+      }
+   },
+   {
+      "name":"q4_birthDate[month]",
+      "aliases":[],
+      "generator_type":"ListGenerator",
+      "generator_params":{
+         "values":["January","February","March","April","May","June","July","August","September","October","November","December"]
+      }
+   },
+   {
+      "name":"q4_birthDate[day]",
+      "aliases":[],
+      "generator_type":"IntegerRangeGenerator",
+      "generator_params":{
+         "begin":1,
+         "end": 31
+      }
+   },
+   {
+      "name":"q4_birthDate[year]",
+      "aliases":[],
+      "generator_type":"IntegerRangeGenerator",
+      "generator_params":{
+         "begin":1920,
+         "end": 2021
+      }
+   },
+   {
+      "name":"q12_phoneNumber12[area]",
+      "aliases":[],
+      "generator_type":"FakerFallbackGenerator",
+      "generator_params":{
+         "pattern":"###"
+      }
+   },
+   {
+      "name":"q12_phoneNumber12[phone]",
+      "aliases":[],
+      "generator_type":"FakerFallbackGenerator",
+      "generator_params":{
+         "pattern":"###-####"
+      }
+   },
+   {
+      "name":"q13_address13[addr_line1]",
+      "aliases":[
+         
+      ],
+      "generator_type":"ComplexFieldGenerator",
+      "generator_params":{
+         "generators":[
+            {"name":"housenumber","generator_type":"FakerFallbackGenerator","generator_params":{"pattern":"####"},"constraints":[]},
+            {"name":"streetname","generator_type":"FakerGenericGenerator","generator_params":{"function_name":"first_name"},"constraints":[]},
+            {"name":"streetsuffix","generator_type":"ListGenerator","generator_params":{"values":["St.","Ave.","Rd."]},"constraints":[]}
+         ],
+         "pattern" : {"origin":"localcontext.housenumber localcontext.streetname localcontext.streetsuffix"}
+      }
+   },
+   {
+      "name":"q13_address13[addr_line2]",
+      "aliases":[
+         
+      ],
+      "generator_type":"ComplexFieldGenerator",
+      "generator_params":{
+         "generators":[
+            {"name":"aptnumber","generator_type":"FakerFallbackGenerator","generator_params":{"pattern":"####"},"constraints":[]},
+            {"name":"aptprefix","generator_type":"ListGenerator","generator_params":{"values":["Apt.","Ste.","Int."]},"constraints":[]}
+         ],
+         "pattern" : {"origin": "localcontext.aptprefix localcontext.aptnumber"}
+      }
+   },
+   {
+      "name":"q13_address13[city]",
+      "aliases":[
+         
+      ],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"city"
+      }
+   },
+   {
+      "name":"q13_address13[state]",
+      "aliases":[
+         
+      ],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"state"
+      }
+   },
+   {
+      "name":"q13_address13[postal]",
+      "aliases":[
+         
+      ],
+      "generator_type":"FakerFallbackGenerator",
+      "generator_params":{
+         "pattern":"#####-####"
+      }
+   },
+   {
+      "name":"q13_address13[country]",
+      "aliases":[
+         
+      ],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"country"
+      }
+   },
+   {
+      "name":"website",
+      "aliases":[
+         
+      ],
+      "generator_type":"FakerGenericGenerator",
+      "generator_params":{
+         "function_name":"url"
+      }
+   }
+]
+}

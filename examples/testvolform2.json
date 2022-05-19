@@ -1,0 +1,169 @@
+{
+   "form_url": "https://www.jotform.com/form-templates/preview/20827049049355/classic&nofs",
+   "name":"ComplexGeneratorsExample",
+   "n_items":100,
+   "fields":[
+   {
+   "name":"q3_name[first]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"first_name"
+   }
+},
+{
+   "name":"q3_name[last]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"last_name"
+   }
+},
+{
+   "name":"q8_email8",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"email"
+   }
+},
+{
+   "name":"q4_birthDate[month]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"month"
+   }
+},
+{
+   "name":"q4_birthDate[day]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"day_of_month"
+   }
+},
+{
+   "name":"q4_birthDate[year]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"year"
+   }
+},
+{
+   "name":"q12_phoneNumber12[area]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"phone_number"
+   }
+},
+{
+   "name":"q12_phoneNumber12[phone]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"phone_number"
+   }
+},
+{
+   "name":"q13_address13[addr_line1]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"street_address"
+   }
+},
+{
+   "name":"q13_address13[addr_line2]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"street_address"
+   }
+},
+{
+   "name":"q13_address13[city]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"city"
+   }
+},
+{
+   "name":"q13_address13[state]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"state"
+   }
+},
+{
+   "name":"q13_address13[postal]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerFallbackGenerator",
+   "generator_params":{
+      "pattern":"#####-####"
+   }
+},
+{
+   "name":"q13_address13[country]",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"country"
+   }
+},
+{
+   "name":"q14_pleaseIndicate14[]",
+   "aliases":[
+      
+   ],
+   "generator_type":"ListGenerator",
+   "generator_params":{
+      "values":[
+         "dummy"
+      ]
+   }
+},
+{
+   "name":"website",
+   "aliases":[
+      
+   ],
+   "generator_type":"FakerGenericGenerator",
+   "generator_params":{
+      "function_name":"url"
+   }
+}
+]
+}
